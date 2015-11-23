@@ -18,8 +18,10 @@ whenever I make a release.
 Alternative (dev versions):
 From within the Stylish extension, use the "Install from URLs…"
 option, and enter the URL
-https://cdn.rawgit.com/kepstin/irccloud-solarized/master/irccloud-solarized.user.css
-This will automatically update whenever I push a commit to the git repository.
+https://rawgit.com/kepstin/irccloud-solarized/master/irccloud-solarized.user.css
+This will automatically update (more or less) whenever I push a commit to the
+git repository.
+
 Note that the dev version only includes Firefox syntax for include rules; it
 will not work in Chrome. Chrome users, please use the userstyles.org version
 instead.
