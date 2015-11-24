@@ -107,7 +107,7 @@
     color: #586e75;
   }
   .bufferList .active.unread span.buffer {
-    border-color: #d33682;
+    border-color: #268bd2;
   }
   .bufferList .buffer:hover span.buffer {
     background-color: #eee8d5;
