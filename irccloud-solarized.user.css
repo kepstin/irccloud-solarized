@@ -100,32 +100,42 @@
   .bufferstatus .bufferOptions:hover, .totalMemberCount:hover {
     color: #586e75;
   }
-  .bufferList .active span.buffer, .bufferList .active:hover span.buffer {
+  .bufferList .active span.buffer {
     color: #657b83;
-    border-radius: 0;
   }
-  .bufferList .unread span.buffer {
+  .bufferList .active:hover span.buffer {
     color: #586e75;
   }
-  .bufferList .selected span.buffer, .bufferList .active.selected span.buffer, .bufferList .active.selected:hover span.buffer, .bufferList h2:hover span.buffer {
-    color: #586e75;
-    background-color: #eee8d5;
-    border-color: #eee8d5;
-  }
-  .bufferList .buffer.unread span.buffer {
-    border-color: #93a1a1;
+  .bufferList .active.unread span.buffer {
+    border-color: #d33682;
   }
   .bufferList .buffer:hover span.buffer {
-    color: #586e75;
     background-color: #eee8d5;
   }
-  .bufferList h2 span.buffer, .bufferList h2.active.selected span.buffer {
+  .bufferList .selected span.buffer, .bufferList .selected:hover span.buffer {
+    color: #fdf6e3;
+    background-color: #657b83;
+    border-color: #586e75;
+  }
+  .bufferList .active.selected span.buffer, .bufferList .active.selected:hover span.buffer {
+    background-color: #657b83;
+    border-color: #586e75;
+  }
+  .bufferList h2 span.buffer {
+    box-shadow: none;
     background-color: #eee8d5;
     border-color: #eee8d5;
-    color: #586e75;
+  }
+  .bufferList h2:hover span.buffer {
+    border-color: #eee8d5;
+  }
+  .bufferList h2.active.selected span.buffer, .bufferList h2.active.selected:hover span.buffer {
     box-shadow: none;
   }
   .bufferList .bufferOptions {
+    color: #93a1a1;
+  }
+  .bufferList .buffer:hover .bufferOptions {
     color: #586e75;
   }
   ul.memberList li.category h2, ul.memberList li.category h2 span.memberCount {
