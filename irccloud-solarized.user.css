@@ -196,7 +196,7 @@
   body.irccloud span.maroon, body.irccloud span.red {
     color: #dc322f !important; /* red */
   }
-  body.irccloud span.purple {
+  body.irccloud span.purple, body.irccloud span.magenta {
     color: #d33682 !important; /* magenta */
   }
   body.irccloud span.yellow {
