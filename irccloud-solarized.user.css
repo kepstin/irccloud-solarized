@@ -1,14 +1,19 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("irccloud.com") {
+  /* Primary theme - Light (Dawn) */
   body {
     color: #657b83;
+    background-color: #fdf6e3;
+  }
+  div.buffermain, .mainContainer {
+    background-color: #fdf6e3;
+  }
+  body.app small {
+    color: #93a1a1;
   }
   .new {
     color: #dc322f;
-  }
-  .bufferinputcell, div.buffermain, div.buffermainwrapper, .mainContainer {
-    background-color: #fdf6e3;
   }
   div.log {
     color: #93a1a1;
@@ -81,6 +86,12 @@
     box-shadow: 5px 0px 0px 0px #eee8d5 inset;
   }
   ul.memberList .bufferLink, ul.memberList li .bufferLink:hover {
+    color: #586e75;
+  }
+  div.log span.message .bufferLink.server, div.log span.message .bufferLink.user {
+    color: #657b83;
+  }
+  div.log div.row span .bufferLink.user.hover, div.log div.row span .bufferLink.user.hover:hover, div.log div.row span .bufferLink.user:hover {
     color: #586e75;
   }
   a, body.irccloud .userError a, body.irccloud .userInfo a, body.irccloud .userSuccess a, button.link, span.link, div.log a, div.log a:hover, div.log div.chat a, div.log div.chat a:hover, div.log div.me a, div.log div.me a:hover, div.log div.status a, div.log div.stats a:hover, #footer a, #sidebar #limits a, h1#title a, #footer a:hover, #sidebar #limits a:hover, h1#title a:hover, div.log div.groupedLines a, div.log div.notice a {
@@ -255,6 +266,9 @@
   .accountMenu__button:hover .accountMenu__caret {
     color: #839496;
   }
+  .themeChooser {
+    vertical-align: top;
+  }
   .themeChooser__layout {
     background-color: #eee8d5;
   }
@@ -263,7 +277,7 @@
   }
   .themeChooser__dawn .themeChooser__label:before {
     font-size: 14px;
-    content: "Solarized";
+    content: "Solarized Light";
   }
   .sidebarChooser--selected .sidebarChooser__layout, .themeChooser--selected .themeChooser__layout {
     border: 2px solid #839496;
@@ -281,32 +295,26 @@
     background-color: #eee8d5;
     border-color: #eee8d5;
   }
-  body.irccloud button a, body.irccloud button a:hover, body.irccloud button span {
-    background-color: #eee8d5;
-    border: 2px solid #93a1a1;
-    box-shadow: 0px 1px 0px #eee8d5;
+
+  /* Seconardy theme - Dark (Dusk) */
+  body.theme-dusk {
+    color: #839496;
+    background-color: #002b36;
+  }
+  body.theme-dusk div.buffermain, body.theme-dusk .mainContainer {
+    background-color: #002b36;
+  }
+  body.theme-dusk.app small {
     color: #586e75;
-    text-shadow: none;
   }
-  body.irccloud button:focus a, body.irccloud button:focus span {
-    box-shadow: 0px 2px 0px #eee8d5;
-    border-color: #657b83;
+  .themeChooser__dusk .themeChooser__layout {
+    background-color: #073642;
   }
-  body.irccloud button.active a, body.irccloud button.active span, body.irccloud button:hover:not([disabled]) a, body.irccloud button:hover:not([disabled]) span {
-    background-color: #657b83;
-    color: #fdf6e3;
+  .themeChooser__dusk .themeChooser__label {
+    font-size: 0;
   }
-  body.irccloud button.action a, body.irccloud button.action span {
-    background-color: #859900;
-    color: #002b36;
-    box-shadow: 0px 1px 0px #eee8d5;
-  }
-  body.irccloud button.action:hover:not([disabled]) a, body.irccloud button.action:hover:not([disabled]) span {
-    color: #fdf6e3;
-    background-color: #859900;
-  }
-  body.irccloud button.action:focus a, body.irccloud button.action:focus span {
-    box-shadow: 0px 2px 0px #eee8d5;
-    border-color: #657b83;
+  .themeChooser__dusk .themeChooser__label:before {
+    font-size: 14px;
+    content: "Solarized Dark";
   }
 }
