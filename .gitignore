@@ -1,2 +1,4 @@
 .bundle
+.sass-cache
+irccloud-solarized.user.css*
 vendor
