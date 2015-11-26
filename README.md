@@ -11,11 +11,15 @@ Installation
 ------------
 
 Recommended (stable):
+
 Go to https://userstyles.org/styles/121074/irccloud-solarized and
 install it via the Stylish browser extension. This will automatically update
 whenever I make a release.
 
 Alternative (dev versions):
+
+*These instructions no longer work; I have to find an automated way to build the css file to fix them*
+
 From within the Stylish extension, use the "Install from URLs…"
 option, and enter the URL
 https://rawgit.com/kepstin/irccloud-solarized/master/irccloud-solarized.user.css
